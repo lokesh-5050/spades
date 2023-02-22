@@ -1,0 +1,42 @@
+*{
+    font-family: product sans;
+}
+.wrap {
+  width: 100%;
+}
+
+.wrap > img {
+  object-fit: cover;
+  width: 13vmax;
+  height: 36vh;
+}
+.images {
+  height: 35vmax;
+  display: flex;
+  gap: 1vmax;
+  justify-content: center;
+  align-items: center;
+}
+.images > h1 {
+  position: absolute;
+  font-size: 10vmax;
+  font-family: montserrat;
+  letter-spacing: 10px;
+  color: #fff;
+}
+.images > img {
+  object-fit: cover;
+  width: 13vmax;
+  height: 36vh;
+}
+.wrap > h2 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 5vmax;
+  margin-top: -1vmax;
+}
+.images > h1 > span {
+  z-index: 99999999;
+  position: relative;
+}
