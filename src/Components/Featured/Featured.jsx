@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import "./Featured.css";
-const Featured = () => {
+const Featured = ({ tl, Expo }) => {
+  let imagesDiv = useRef(null)
+  const gsapLogics = ()=>{
+    tl.from(imagesDiv.current,3,{
+      x:1200,
+      opacity:0,
+      stagger:0.5,
+      ease:Expo
+    })
+  }
+  useLayoutEffect(() => {
+    gsapLogics()
+  });
+
   return (
     <>
-      <div id="kmain">
+      <div ref={imagesDiv} id="kmain">
         <div id="kheading">
           <h1>Featured Products</h1>
         </div>
@@ -18,7 +31,7 @@ const Featured = () => {
             </div>
             <div id="klower">
               <h2>Sculpted Pendant Lamp</h2>
-              <button id="kbutton">₹7,700.00</button>
+              <button id="kbutton">₹1500.00</button>
             </div>
           </div>
           <div class="kcards">
@@ -30,7 +43,7 @@ const Featured = () => {
             </div>
             <div id="klower">
               <h2>Sculpted Pendant Lamp</h2>
-              <button id="kbutton">₹7,700.00</button>
+              <button id="kbutton">₹500.00</button>
             </div>
           </div>
           <div class="kcards">
@@ -42,7 +55,7 @@ const Featured = () => {
             </div>
             <div id="klower">
               <h2>Sculpted Pendant Lamp</h2>
-              <button id="kbutton">₹7,700.00</button>
+              <button id="kbutton">₹1000.00</button>
             </div>
           </div>
           <div class="kcards">
@@ -53,8 +66,8 @@ const Featured = () => {
               />
             </div>
             <div id="klower">
-              <h2>Sculpted Pendant Lamp</h2>
-              <button id="kbutton">₹7,700.00</button>
+              <h2>Sculpted Wooody Lamp</h2>
+              <button id="kbutton">₹700.00</button>
             </div>
           </div>
         </div>

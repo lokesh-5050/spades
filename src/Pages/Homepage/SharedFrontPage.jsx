@@ -10,12 +10,13 @@ const SharedFrontPage = ({ tl, Expo }) => {
         style={{
           width: "100%",
           backgroundColor: "#000",
+          overflow:'hidden'
         }}
         id="main"
       >
         <Front tl={tl} Expo={Expo} />
         <RotateImgs />
-        <Featured />
+        <Featured tl={tl} Expo={Expo}/>
       </div>
     </>
   );

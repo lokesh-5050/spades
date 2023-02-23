@@ -8,10 +8,10 @@ const Navbar = () => {
         <div className="navtop">
           <div className="lft "></div>
           <div className="center upper">
-            <img
+            {/* <img
               src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user7.jpg"
               alt=""
-            />
+            /> */}
             <h2>Spades</h2>
           </div>
           <div className="rgt upper_btn"></div>

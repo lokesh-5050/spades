@@ -14,7 +14,7 @@ body {
 #kmain {
   width: 100%;
   height: 100%;
-  padding-top: 10vmax;
+  padding-top: 50vmax;
 }
 
 .kall_cards {
@@ -35,15 +35,18 @@ body {
   display: flex;
   justify-content: center;
   color: #fff;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 #khead {
   font-size: 4vh;
   display: flex;
   justify-content: center;
+  padding-bottom: 5vh;
 }
-#khead>h1{
-    color: #fff;
+#khead > h1 {
+  color: #fff;
 }
 
 .kcards {
@@ -121,7 +124,10 @@ body {
 
 #kbutton {
   margin-top: 5px;
+  padding: 1vh 1vh;
+  border-radius: 10px;
   font-size: large;
+  background-color: #d4d2d27e;
 }
 
 #kbottom {
